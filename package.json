@@ -1,0 +1,24 @@
+{
+  "name": "react-native-notch-info",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native",
+    "notch",
+    "notch height",
+    "has notch"
+  ],
+  "author": "natasha",
+  "license": "",
+  "devDependencies": {
+    "react-native": "^0.41.2"
+  },
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
+  }
+}
