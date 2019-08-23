@@ -75,7 +75,8 @@ Pod::Spec.new do |spec|
   #
 
   # spec.source       = { :git => "https://github.com/plesco/react-native-notch-info.git", :tag => "#{spec.version}" }
-  spec.source       = { :git => "" }
+  spec.source       = { :git => "https://github.com/plesco/react-native-notch-info.git" }
+  # spec.source       = { :git => "" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
