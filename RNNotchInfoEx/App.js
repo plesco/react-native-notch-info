@@ -27,8 +27,10 @@ class App extends React.Component{
   }
 
   componentDidMount = () => {
+    if (Platform.OS === "android") {
       RNNotchInfo.hasNotch(( hasNotch ) => this.setState({ hasNotch : hasNotch }));
       RNNotchInfo.notchHeight((notchHeight) => this.setState({ notchHeight: notchHeight}));
+    }
   }
 
   render(){
