@@ -1,7 +1,11 @@
 {
   "name": "react-native-notch-info",
   "version": "1.0.4",
-  "description": "",
+  "description": "Get device notch info using react-native",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/plesco/react-native-notch-info"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +17,7 @@
     "has notch"
   ],
   "author": "natasha",
-  "license": "",
+  "license": "MIT",
   "devDependencies": {
     "react-native": "^0.41.2"
   },
