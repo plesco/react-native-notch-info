@@ -10,9 +10,38 @@
 `$ react-native link react-native-notch-info`
 
 #### Manual installation
-#### iOS
+#### iOS (via CocoaPods)
+Add the following lines to your build targets in your Podfile
 
-This is Android only for now.
+```
+pod 'React', :path => '../node_modules/react-native'
+
+# Explicitly include Yoga if you are using RN >= 0.42.0
+pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+
+pod 'RNNotchInfo', :path => '../node_modules/react-native-notch-info'
+
+```
+
+Then run `pod install`
+
+#### iOS (via CocoaPods)
+
+In XCode, in the project navigator:
+
+1. Right click `Libraries`
+2. Add Files to `[your project's name]`
+3. Go to `node_modules/react-native-notch-info/ios`
+4. Add the file `RNNotchInfo.xcodeproj`
+5. In XCode, in the project navigator, select your project.
+
+Add the `libRNNotchInfo.a` from the notchinfo project to your project's Build Phases ➜ Link Binary With Libraries
+Click `.xcodeproj` file you added before in the project navigator and go the Build Settings tab. Make sure All is toggled on (instead of Basic).
+Look for Header Search Paths and make sure it contains both $(SRCROOT)/../react-native/React and $(SRCROOT)/../../React
+Mark both as recursive (should be OK by default).
+
+Run your project (Cmd+R)
+
 
 #### Android
 
