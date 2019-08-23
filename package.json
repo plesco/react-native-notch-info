@@ -1,6 +1,6 @@
 {
   "name": "react-native-notch-info",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Get device notch info using react-native",
   "repository": {
     "type": "git",
